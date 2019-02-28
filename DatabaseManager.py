@@ -3,6 +3,7 @@ import mysql.connector
 
 # DB name phonebook
 # Table name users
+# cannpt have two same phone numbers
 
 cnx = mysql.connector.connect(host='localhost',user='baivab',
                               password='baivab12345', database='phonebook')
@@ -22,13 +23,21 @@ def delete_specific(phone_):
     cnx.commit()
     cnx.close()
 
-def login_check(phone_,passoword_):
+def login_check(phone_,password_):
+    pass
 
-def user_exists_check(name_,email_,phone_,password_):
+
+def user_exists_check(phone_):
+    pass
 
 def add_relation(name_,relation_):
+    pass
+#change based on phone_numbr
 
-def delete_relation(name_,relation_)
+def delete_relation(name_,relation_):
+    pass
+# change based on phone_number
 
-def return_specific_details(name_)
+def return_specific_details(name_):
+    pass
 
